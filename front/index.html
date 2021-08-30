@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Mon Front</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/components/users.js"></script>
+  <script defer src="assets/js/components/user.js"></script>
+  <script defer src="assets/js/components/accounts.js"></script>
+
+
+  <!-- Chargement des components -->
+
+</head>
+<body>
+  <div data-content="user">
+    <form action="" method="post">
+      <div class="field">
+        <label class="label">prénom</label>
+        <div class="control">
+          <input class="input" type="text" name="firstname" placeholder="Prénom">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Nom de famille</label>
+        <div class="control">
+          <input class="input" type="text" name="lastname" placeholder="Nom de famille">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Adresse</label>
+        <div class="control">
+          <input class="input" type="text" name="address" placeholder="Adresse">
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox" name="active">
+            Compte actif
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Adresse</th>
+            <th>Actif</th>
+            <th>Types de comptes</th>
+          </tr>
+      </thead>
+      <tbody data-content="users">
+          
+      </tbody>
+  </table>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+          <tr>
+            <th>ID</th>
+            <th>Prénom</th>
+            <th>Comptes liés</th>
+          </tr>
+      </thead>
+      <tbody data-content="accounts">
+          
+      </tbody>
+  </div>
+  
+</body>
+</html>
